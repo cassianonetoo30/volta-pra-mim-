@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por favor volta pra mim</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #fdf2f2; /* Um rosa bem clarinho, quase branco */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+            color: #d63384; /* Um rosa mais escuro para o título */
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        /* Estilo para o player do YouTube (opcional) */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* Estilo para o botão (caso use link do Spotify) */
+        .btn-music {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #1DB954; /* Verde Spotify */
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-music:hover {
+            background-color: #1ed760;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Oi...</h1>
+        <p>Eu estava ouvindo musica e do nada essa música tocou. Não teve como não lembrar de você e de tudo que vivemos de bom. Espero que a gente possa viver isso novamente em breve, eu te amo princesinha.</p>
+        
+        <div class="video-container">
+            <iframe src="https://youtu.be/10cZnoj0uWw?si=Xns0gFWDK5miPE9z" title="Nossa Música" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        </div>
+</body>
+</html>
