@@ -78,7 +78,7 @@
         heart.classList.add('heart');
         // Alterna entre corações diferentes
         heart.innerHTML = Math.random() > 0.5 ? '❤️' : '💖';
-        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.down = Math.random() * 100 + 'vw';
         heart.style.animationDuration = Math.random() * 3 + 2 + 's';
         heart.style.opacity = Math.random() * 0.7 + 0.3;
         document.body.appendChild(heart);
@@ -89,8 +89,8 @@
         }, 5000);
     }
 
-    // Cria um novo coração a cada 300 milissegundos
-    setInterval(createHeart, 300);
+    // Cria um novo coração a cada 200 milissegundos
+    setInterval(createHeart, 200);
    </script>
 </body>
 </html>
