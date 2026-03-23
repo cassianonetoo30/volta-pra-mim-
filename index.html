@@ -61,7 +61,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Oi...</h1>
+        <h1>Oi amor to com muita saudade de voce...</h1>
         
          <img src="foto.jpeg" alt="Nossa lembrança" style="width: 100%; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 
@@ -72,5 +72,25 @@
             <iframe src="https://www.youtube.com/embed/10cZnoj0uWw" title="Nossa Música" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
+           <script>
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        // Alterna entre corações diferentes
+        heart.innerHTML = Math.random() > 0.5 ? '❤️' : '💖';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+        heart.style.opacity = Math.random() * 0.7 + 0.3;
+        document.body.appendChild(heart);
+
+        // Limpa o código para não travar o celular dela
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+
+    // Cria um novo coração a cada 300 milissegundos
+    setInterval(createHeart, 300);
+   </script>
 </body>
 </html>
